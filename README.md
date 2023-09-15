@@ -37,7 +37,7 @@ This repository contains the code for the hands-on session of the paper talk on 
         1. A new directory called `tokenizer` has been created in the current working directory.
         2. Visit `https://huggingface.co/<your_username>/tokenizer`. You should be able to see this repository that
            holds your new tokenizer
-        3. Make sure to also push the changes to your forked repository. 
+        3. Make sure to also push the changes to your forked repository.
     4. Setup ngrok
         1. Create an account on [ngrok](https://ngrok.com/)
         2. Navigate to your [dashboard](https://dashboard.ngrok.com/get-started/setup) and copy your authtoken. You can
@@ -47,3 +47,8 @@ This repository contains the code for the hands-on session of the paper talk on 
 
 This will be covered in the session. If you wish to train the model beforehand, follow the steps below:
 
+1. Push any changes to your forked repository
+2. Visit this [Colab notebook](https://colab.research.google.com/drive/1VV9icZiJoc1wb756-WO-hcIDqOEl5W-C?usp=sharing)
+   and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace the values of the
+   tokens where mentioned. 
+3. The notebook takes ~6 hours to run per epoch. It will automatically save the progress after every epoch. 

@@ -10,7 +10,7 @@ tokenizer_trainer.train_tokenizer(
 tokenizer_trainer.save_tokenizer("tokenizer")
 
 tokenizer_trainer.push_to_hub(
-    tokenizer_path="<your_username>/tokenizer",
+    tokenizer_path="aditeyabaral/paper-talk-tokenizer",
     commit_message="Added tokenizer trained on WhatsApp messages",
     auth_token="<your_auth_token>"
 )
