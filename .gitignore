@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+.vscode/
+log*/
+saved_models/
+.ipynb_checkpoints/
+tokenizer/
+*.log
+.env
