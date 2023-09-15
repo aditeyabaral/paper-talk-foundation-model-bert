@@ -39,7 +39,7 @@ This repository contains the code for the hands-on session of the paper talk on 
         3. Make sure to also push the changes to your forked repository.
 5. Setup ngrok
     1. Create an account on [ngrok](https://ngrok.com/)
-    2. Navigate to your [dashboard](https://dashboard.ngrok.com/get-started/setup) and copy your authtoken. You can
+    2. Navigate to your [dashboard](https://dashboard.ngrok.com/get-started/setup) and copy your auth token. You can
        view your token in the `Connect your account` section.
 
 ## Training the Model

@@ -318,7 +318,11 @@ class ChatBERT(nn.Module):
             ).to(self.device)
             membership_loss += self.minimise_distance_between_words_encodings(member_id_title_encoding)
             num_memberships += 1
-        return membership_loss / num_memberships
+
+        if num_memberships == 0:
+            return None
+        else:
+            return membership_loss / num_memberships
 
     def forward_sender_classification(
             self,
@@ -379,7 +383,9 @@ class ChatBERT(nn.Module):
         if mlm_batch:
             output.loss_mlm = self.forward_mlm(mlm_batch)
         if membership_batch:
-            output.loss_membership = self.forward_membership(membership_batch)
+            loss_membership = self.forward_membership(membership_batch)
+            if loss_membership is not None:
+                output.loss_membership = loss_membership
         if topic_association_batch:
             loss_topic_association, loss_cs = self.forward_topic_association(topic_association_batch)
             if loss_cs is not None:
