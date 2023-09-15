@@ -15,8 +15,7 @@ This repository contains the code for the hands-on session of the paper talk on 
 3. Set up HuggingFace code repository
     1. Visit [HuggingFace](https://huggingface.co/)'s website and create an account. Remember your username!
     2. Navigate to [Access Tokens](https://huggingface.co/settings/tokens) and generate a token with **write access**.
-    3. Copy your username and token to `src/train_tokenizer.py` (L13, L15)
-    4. Copy your username to `src/train_model.py` (L10)
+    3. Copy your username and token to `src/train_tokenizer.py` (L13, L15) and `src/train_model.py` (L10, L62)
 4. Training on your data (optional) - a data directory consisting of exported chat history from the `PESU26`, `PESU27`
    and `Tech Talks` groups is provided in the `data` directory. If you wish to train on your own data, follow the steps
    below:
