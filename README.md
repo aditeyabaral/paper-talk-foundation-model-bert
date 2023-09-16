@@ -25,7 +25,9 @@ This repository contains the code for the hands-on session of the paper talk on 
     2. You need to now convert the `.txt` files into `.json` files which the trainer can use. To do this, run the
        following command:
         ```bash
-        python src/whatsapp.py --input <path to directory containing .txt files> --output_dir <path to output directory>
+        python src/whatsapp.py \
+        --input <path to directory containing .txt files> \
+        --output <path to output directory>
         ``` 
     3. You can now train the tokenizer on your data by running the following command. Modify L7
        in `src/train_tokenizer.py` to add the path to the newly generated `messages.json` file and then run the script.
