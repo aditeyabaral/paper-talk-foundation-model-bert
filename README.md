@@ -2,6 +2,10 @@
 
 This repository contains the code for the hands-on session of the paper talk on building foundation models using BERT.
 
+<img src="img/bert.png" alt="BERT">
+
+[Image source](https://www.exxactcorp.com/blog/Deep-Learning/how-do-bert-transformers-work)
+
 ## Setup
 
 1. Fork and clone the repository
