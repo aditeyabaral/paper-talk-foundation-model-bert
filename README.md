@@ -42,7 +42,7 @@ This repository contains the code for the hands-on session of the paper talk on 
 5. Setup ngrok
     1. Create an account on [ngrok](https://ngrok.com/)
     2. Navigate to your [dashboard](https://dashboard.ngrok.com/get-started/setup) and copy your auth token. You can
-       view your token in the `Connect your account` section.
+       view your token in the `2. Connect your account` section.
 
 ## Training the Model
 
@@ -52,4 +52,17 @@ This will be covered in the session. If you wish to train the model beforehand, 
 2. Visit this [Colab notebook](https://colab.research.google.com/drive/1VV9icZiJoc1wb756-WO-hcIDqOEl5W-C?usp=sharing)
    and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace the values of the
    tokens where mentioned. 
-3. The notebook takes ~6 hours to run per epoch. It will automatically save the progress after every epoch. 
+3. The notebook takes ~6 hours to run per epoch. It will automatically save the progress after every epoch and upload the model to your HuggingFace repository.
+
+## Running inference
+
+This will be covered in the session. If you wish to run inference beforehand, follow the steps below:
+1. Push any changes to your forked repository
+2. Visit this [Colab notebook](https://colab.research.google.com/drive/1Uz79EfPoieQER1dHUbA7kheZiAyxwwTi?usp=sharing) and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace the values of the
+   tokens where mentioned.
+
+## Beyond the session
+
+If you did not try training your own model, it is highly recommended you do so! You can also try out some other fine-tuning tasks like:
+1. Given a message, predict the group, sender and recipient
+2. Perform clustering on the messages and find similar ones
