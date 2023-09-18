@@ -12,7 +12,7 @@ This repository contains the code for the hands-on session of the paper talk on 
 2. Create a virtual environment using conda (recommended) or venv and activate it. Then, install the dependencies using
    the following command:
     ```bash
-    conda create -n bert python=3.8
+    conda create -n bert python=3.10
     conda activate bert
     pip install -r requirements.txt
     ```
@@ -33,6 +33,10 @@ This repository contains the code for the hands-on session of the paper talk on 
         --input <path to directory containing .txt files> \
         --output <path to output directory>
         ``` 
+       Based on the datetime format used by your phone, you might need to modify the regex stored in
+       the `datetime_format` variable in the
+       `src/whatsapp.py` file. If you are unsure about the regex, you can use [regex101](https://regex101.com/) to test
+       it out. If you are unaware of how to write regex, feel free to reach out to me.
     3. You can now train the tokenizer on your data by running the following command. Modify L7
        in `src/train_tokenizer.py` to add the path to the newly generated `messages.json` file and then run the script.
         ```bash
@@ -54,19 +58,26 @@ This will be covered in the session. If you wish to train the model beforehand, 
 
 1. Push any changes to your forked repository
 2. Visit this [Colab notebook](https://colab.research.google.com/drive/1VV9icZiJoc1wb756-WO-hcIDqOEl5W-C?usp=sharing)
-   and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace the values of the
-   tokens where mentioned. 
-3. The notebook takes ~6 hours to run per epoch. It will automatically save the progress after every epoch and upload the model to your HuggingFace repository.
+   and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace
+   the values of the
+   tokens where mentioned.
+3. The notebook takes ~6 hours to run per epoch. It will automatically save the progress after every epoch and upload
+   the model to your HuggingFace repository.
 
 ## Running inference
 
 This will be covered in the session. If you wish to run inference beforehand, follow the steps below:
+
 1. Push any changes to your forked repository
-2. Visit this [Colab notebook](https://colab.research.google.com/drive/1Uz79EfPoieQER1dHUbA7kheZiAyxwwTi?usp=sharing) and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace the values of the
+2. Visit this [Colab notebook](https://colab.research.google.com/drive/1Uz79EfPoieQER1dHUbA7kheZiAyxwwTi?usp=sharing)
+   and carry out the steps mentioned in the notebook. Make sure to choose a GPU runtime, run it cell by cell and replace
+   the values of the
    tokens where mentioned.
 
 ## Beyond the session
 
-If you did not try training your own model, it is highly recommended you do so! You can also try out some other fine-tuning tasks like:
+If you did not try training your own model, it is highly recommended you do so! You can also try out some other
+fine-tuning tasks like:
+
 1. Given a message, predict the group, sender and recipient
 2. Perform clustering on the messages and find similar ones
